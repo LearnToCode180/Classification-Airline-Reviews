@@ -11,11 +11,12 @@ I tried doing so with **nlpaug** library using the **SynonymAug** method of the 
 
  When comparing this two functions on sentences that have the same length, the difference in time was noticeable:
 
-- Sentence with 34 words: 0.02s for the first function and 0.02s for the second one. 
-- Sentence with 308 words: 0.25s for the first function (I've tried to test it on more longuer sentences but it didn't work) and 0.16s for the second one.
-- Sentence with 654 words (the longuest one in the dataset): 0.22s for the second function.
+- Sentence with **34 words**: **0.02s** for the first function and **0.02s** for the second one. 
+- Sentence with **308 words**: **0.25s** for the first function (I've tried to test it on more longuer sentences but it didn't work) and **0.16s** for the second one.
+- Sentence with **654 words** (the longuest one in the dataset): **0.22s** for the second function.
 
 I run this process on every sentence of the dataset, so, the number of lines has been duplicated. And, when I retrained the model on this augmented version, the difference was impressive. The accuracy increased from **34%** to **85%**.
 
  The project is not finished yet, and I still want a more higher accuracy.
+
  If you have some instructive ideas that can help achieve that, don't hesitate to text me, It would be great to discuss them with you! 
